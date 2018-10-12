@@ -1,0 +1,26 @@
+@import "~or-theme";
+
+.or-menu-item {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  font-family: $font-family;
+
+  &.or-menu-item-active {
+    .or-menu-item-name {
+      border-bottom: 1px solid $gray8;
+    }
+  }
+
+  .or-menu-item-name {
+    padding: 2px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .or-sub-nav {
+    position: absolute;
+    z-index: 99;
+    padding: 20px;
+  }
+}
