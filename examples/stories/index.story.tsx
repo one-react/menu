@@ -23,8 +23,7 @@ storiesOf('or-menu', module)
       }
     })
   )
-  .add('basic', () => <MenuItem>Test</MenuItem>)
-  .add('sample', () => <Example />, {
+  .add('example', () => <Example />, {
     info: {
       source: false,
       text: previewCode(require('!!raw-loader!./example.tsx'))

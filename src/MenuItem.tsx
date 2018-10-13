@@ -7,9 +7,15 @@ interface Props {
    */
   classname?: string
 
+  /**
+   * menuItem title
+   */
   children: string
 
-  subNav: React.ReactElement<any>
+  /**
+   * the sub-nav appears when the mouse moves over the menuItem title
+   */
+  subNav?: React.ReactElement<any>
 }
 
 export class MenuItem extends PureComponent<Props, {}> {
@@ -34,7 +40,8 @@ export class MenuItem extends PureComponent<Props, {}> {
         onMouseLeave={this.handleMouseLeave}
       >
         <div className="or-menu-item-name">{children}</div>
-        {this.state.active && <div className="or-sub-nav">{subNav}</div>}
+        {this.state.active &&
+          subNav && <div className="or-sub-nav">{subNav}</div>}
       </div>
     )
   }

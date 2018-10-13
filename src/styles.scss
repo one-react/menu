@@ -1,14 +1,17 @@
 @import "~or-theme";
 
-.or-menu-item {
+.or-menu {
   position: relative;
+}
+
+.or-menu-item {
   display: inline-block;
   margin: 0 5px;
   font-family: $font-family;
 
   &.or-menu-item-active {
     .or-menu-item-name {
-      border-bottom: 1px solid $gray8;
+      border-bottom-color: $gray8;
     }
   }
 
@@ -16,11 +19,15 @@
     padding: 2px;
     cursor: pointer;
     font-weight: 500;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: transparent;
   }
 
   .or-sub-nav {
     position: absolute;
+    left: 0;
+    top: 100%;
     z-index: 99;
-    padding: 20px;
   }
 }

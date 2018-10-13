@@ -1,6 +1,50 @@
+.example-wrapper {
+  .or-menu {
+    padding: 0 100px;
+  }
+
+  .sub-nav-overlay {
+    display: flex;
+
+    .item-wrapper {
+      margin: 0 50px;
+
+      .title {
+        font-weight: 500;
+        color: #111;
+        line-height: 2;
+      }
+
+      .image {
+        width: 144px;
+        height: 144px;
+        background-size: contain;
+
+        &.image-1 {
+          background-image: url('../public/images/face.png');
+        }
+
+        &.image-2 {
+          background-image: url('../public/images/perfume.png');
+        }
+
+        &.image-3 {
+          background-image: url('../public/images/lip.png');
+        }
+
+        &.image-4 {
+          background-image: url('../public/images/ear.png');
+        }
+      }
+    }
+  }
+}
+
 .or-sub-nav {
-  width: 800px;
+  width: 100vw;
   height: 400px;
+  padding: 40px 20px;
   background-color: #fff;
-  opacity: .8;
+  color: #555;
+  line-height: 1.5;
 }
