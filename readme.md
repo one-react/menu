@@ -1,6 +1,5 @@
 # One React Component: menu
 
-
 <p align="center"><img width="150" src="https://cdn.rawgit.com/one-react/assets/master/logo%402x.png" alt="logo"></p>
 
 [![TravisCI Build](https://img.shields.io/travis/one-react/menu.svg)](https://travis-ci.org/one-react/menu)
