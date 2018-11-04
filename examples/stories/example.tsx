@@ -48,7 +48,10 @@ const subNav1 = (
       <div>Sunset Collection</div>
     </div>
     <div className="item-wrapper">
-      <div className="image image-1" />
+      <div
+        className="image"
+        style={{ backgroundImage: `url(${require('./images/face.png')})` }}
+      />
     </div>
   </div>
 )
@@ -79,7 +82,10 @@ const subNav2 = (
       <div>Grapefruit Candle</div>
     </div>
     <div className="item-wrapper">
-      <div className="image image-2" />
+      <div
+        className="image"
+        style={{ backgroundImage: `url(${require('./images/perfume.png')})` }}
+      />
     </div>
   </div>
 )
@@ -112,7 +118,10 @@ const subNav3 = (
       <div>Sunset Collection</div>
     </div>
     <div className="item-wrapper">
-      <div className="image image-3" />
+      <div
+        className="image"
+        style={{ backgroundImage: `url(${require('./images/lip.png')})` }}
+      />
     </div>
   </div>
 )
@@ -143,7 +152,10 @@ const subNav4 = (
       <div>Grapefruit Candle</div>
     </div>
     <div className="item-wrapper">
-      <div className="image image-4" />
+      <div
+        className="image"
+        style={{ backgroundImage: `url(${require('./images/ear.png')})` }}
+      />
     </div>
   </div>
 )
