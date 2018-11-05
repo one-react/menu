@@ -16,6 +16,10 @@ module.exports = (baseConfig, env, defaultConfig) => {
     ]
   })
 
+  if (env === 'production'.toUpperCase()) {
+    defaultConfig.output.publicPath = '/menu/'
+  }
+
   defaultConfig.resolve.alias['or-menu'] = path.resolve(__dirname, '../../src')
 
   defaultConfig.resolve.extensions.push('.ts', '.tsx')
