@@ -3,9 +3,9 @@ import React, { PureComponent } from 'react'
 
 interface Props {
   /**
-   * additional classname for menuItem
+   * additional className for menuItem
    */
-  classname?: string
+  className?: string
 
   /**
    * menuItem title
@@ -24,12 +24,12 @@ export class MenuItem extends PureComponent<Props, {}> {
   }
 
   render() {
-    const { classname, children, subNav } = this.props
+    const { className, children, subNav } = this.props
     const menuClass = clx(
       {
         'or-menu-item-active': this.state.active
       },
-      classname,
+      className,
       'or-menu-item'
     )
 

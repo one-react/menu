@@ -3,15 +3,15 @@ import React, { PureComponent } from 'react'
 
 interface Props {
   /**
-   * additional classname for menu
+   * additional className for menu
    */
-  classname?: string
+  className?: string
 }
 
 export class Menu extends PureComponent<Props, {}> {
   render() {
-    const { classname, children } = this.props
-    const menuClass = clx(classname, 'or-menu')
+    const { className, children } = this.props
+    const menuClass = clx(className, 'or-menu')
 
     return (
       <div className={menuClass}>
