@@ -169,7 +169,7 @@ interface Props {
 ## Customize Theme
 **Customize in webpack**
 
-The following variables in or-button can be overridden:
+The following variables in or-menu can be overridden:
 
 ```scss
 $or-menu-active-color: or-$gray8 !default;
